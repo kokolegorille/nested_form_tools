@@ -1,0 +1,9 @@
+<fieldset name="<%= html_options[:title] %>" class="nested-fieldset inputs">
+  <legend><%= html_options[:title] %></legend>
+  <%= link_to_add_nested(association, html_options) %>
+  <div id="<%= html_options[:container_id] %>" class="nested-wrapper">
+    <%= f.fields_for association do |nested_form| %>
+    <%= render partial, f: nested_form %>
+    <% end %>
+  </div>
+</fieldset>

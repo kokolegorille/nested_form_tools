@@ -1,3 +1,10 @@
+gem 'nested_form_tools', path: '/path/to/local/gem'
++ Add next line to application javascript
+//= require nested_form_tools
+
++ Add next line to application css
+ *= require nested_form_tools
+
 = NestedFormTools
 
 This project rocks and uses MIT-LICENSE.
